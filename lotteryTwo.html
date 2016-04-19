@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="number" name="userNum" id="usNumOne" min="0" max="10" />
+	<input type="number" name="userNum" id="usNumTwo" min="0" max="10" />
+	<input type="number" name="userNum" id="usNumThree" min="0" max="10" />
+	<input type="number" name="userNum" id="usNumFour" min="0" max="10" />
+
+	<button onclick="getNums()">Submit Numbers</button>
+	<div class="col-md-6">
+		<div class="result">
+			<div id="output"></div>
+		</div>
+	</div>
+
+	<script>
+		var wallet = 10;
+		var chooseNums = [];
+		var playGame;
+		var block = document.getElementById("output");
+		block.innerHTML = "$" + wallet;
+		// First we need to choose numbers
+
+		function getNums() {
+			
+			var numOne = document.getElementById("usNumOne").value;
+			var numTwo = document.getElementById("usNumTwo").value;
+			var numThree = document.getElementById("usNumThree").value;
+			var numFour = document.getElementById("usNumFour").value;
+			chooseNums.push(numOne);
+			chooseNums.push(numTwo);
+			chooseNums.push(numThree);
+			chooseNums.push(numFour);
+			for (var i = 0; i < chooseNums.length; i++) {
+				chooseNums[i] = parseInt(chooseNums[i]);
+			} 
+			console.log(chooseNums);
+		}
+		// We need to generate lottery numbers
+
+		function displayLotto() {
+			var limit = 4,
+				amount = 4;
+			var winningNums = [];
+
+			while (winningNums.length < limit) {
+				var random_number = Math.floor(Math.random() * 10) + 1;
+				if (winningNums.indexOf(random_number) == -1) {
+					winningNums.push(random_number);
+				}
+				console.log(winningNums);
+			}
+			winningNums.sort();
+			return winningNums.sort();
+		}
+		
+		function payBishes() {
+			
+		}
+
+
+
+		// 		> at the SAME TIME, deduct $2 from wallet
+
+		// We need to compare the numbers we chose
+		//		> Add money to the wallet depending on matching numbers
+	</script>
+
+</body>
+
+</html>

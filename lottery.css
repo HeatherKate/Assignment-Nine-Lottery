@@ -1,0 +1,37 @@
+.panel-heading {
+	text-align: center;
+	width: 100%;
+	background-color: cadetblue;
+	font-size: 28px;
+	color: lightgrey;
+}
+.pick {
+	font-size: 18px;
+	padding: 10px;
+	color: gray;
+	
+}
+.lotto-nums {
+	font-size: 18px;
+	text-align: center;
+}
+#bank {
+	background-color: grey;
+	text-align: center;
+	color: white;
+}
+.bankName {
+	background-color: grey;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+.panel-heading-two {
+	text-align: center;
+	background-color: indianred;
+	padding: 10px;
+}
+.result {
+	text-align: center;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Feather's Fantastic Filibuster Lottery</title>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="lottery.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div clas="row">
+			<div class="col-med-12">
+				<div class="panel panel-custom">
+					<div class="panel-heading">
+						Feather's Fantastic Filibuster Lottery
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container game">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="pick">
+					Pick Four Numbers >
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="lotto-nums">
+					<button id="one" onclick="selectNumber(1)">1</button>
+					<button id="two" onclick="selectNumber(2)">2</button>
+					<button id="three" onclick="selectNumber(3)">3</button>
+					<button id="four" onclick="selectNumber(4)">4</button>
+					<button id="five" onclick="selectNumber(5)">5</button>
+					<button id="six" onclick="selectNumber(6)">6</button>
+					<button id="seven" onclick="selectNumber(7)">7</button>
+					<button id="eight" onclick="selectNumber(8)">8</button>
+					<button id="nine" onclick="selectNumber(9)">9</button>
+					<button id="ten" onclick="selectNumber(10)">10</button>
+				</div>
+			</div>
+			<div class="col-md-3">
+			<div class = bankName>Bank</div>
+				<div id="bank">
+					 $10
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container play">
+		<div clas="row">
+			<div class="col-med-12">
+				<div class="panel panel-custom">
+					<div class="panel-heading-two">
+						<button onclick="payBiches()" id="playNow">Show Winning Numbers!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container results">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="pick">
+					Winning Numbers >
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="result">
+					<div id="output"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="lottery.js"></script>
+</body>
+
+</html>
